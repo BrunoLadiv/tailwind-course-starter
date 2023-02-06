@@ -7,6 +7,18 @@
     <script defer src="./assets/fontawesome/js/solid.min.js"></script>
     <script defer src="./assets/fontawesome/js/fontawesome.min.js"></script>
     <title>NO IDEA</title>
+    <script>
+      window.onload = () =>{
+        const mobileMenuIcon = document.getElementById("mobile-menu-button")
+        mobileMenuIcon.addEventListener("click", ()=>{
+          if(mobileMenuIcon.classList.contains("open")){
+            mobileMenuIcon.classList.remove("open")
+          }else{
+            mobileMenuIcon.classList.add("open")
+          }
+        })
+      }
+    </script>
   </head>
   <body>
     <header class="text-zinc-200">
